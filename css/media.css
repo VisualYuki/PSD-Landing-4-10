@@ -1,0 +1,92 @@
+@media (max-width: 1180px) {
+  .header__logo a {
+    display: block;
+    margin-left: 15px;
+  }
+  .top-form__form__inner {
+    flex-flow: wrap row;
+    align-content: space-between;
+
+    width: 570px !important;
+    height: 100px;
+  }
+
+  .top-form__form__inner .default-btn {
+    width: 281px;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu__inner a {
+    padding: 5px !important;
+  }
+}
+
+@media (max-width: 750px) {
+}
+
+@media (max-width: 600px) {
+  .top-form__form__inner {
+    flex-flow: nowrap column !important;
+    align-items: center;
+    width: 250px !important;
+    height: 200px;
+  }
+}
+
+@media (max-width: 700px) {
+  .menu__inner {
+    width: 350px;
+  }
+  .top-form__title {
+    font-size: 25px !important;
+    padding-top: 15px !important;
+  }
+}
+
+@media (min-width: 420px) {
+  .menu__inner {
+    display: block !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .menu {
+    position: relative;
+  }
+  .menu__inner {
+    display: none;
+
+    width: 310px;
+
+    position: absolute;
+    top: 80%;
+    left: -320px;
+  }
+
+  .menu__inner ul {
+    display: flex;
+    flex-flow: wrap row;
+    align-content: space-between;
+    background-color: #ffbb42;
+
+    height: 50px;
+  }
+  .menu__inner ul li a {
+    color: white;
+  }
+  .menu-icon:before {
+    content: "\e9bd";
+    font-family: "icomoon";
+    font-size: 35px;
+
+    position: absolute;
+    left: -70px;
+    top: 50%;
+    z-index: 1;
+
+    color: #6e6e6e;
+
+    transform: translateY(-50%);
+  }
+}
