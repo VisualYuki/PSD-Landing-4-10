@@ -40,6 +40,7 @@ ul li {
 a {
   /* display: block; */
   text-decoration: none;
+  color: white;
 }
 
 .container {
@@ -100,8 +101,6 @@ a {
   ===============================================*/
 
 .top-form {
-  min-height: 590px;
-
   text-align: center;
 
   background-image: url("../image/form-top__fon.jpg");
@@ -109,6 +108,10 @@ a {
   background-position: center;
   background-size: cover;
   /* background-color: #709dca; */
+}
+
+.top-form__inner {
+  height: 590px;
 }
 
 .top-form__title {
@@ -222,12 +225,10 @@ a {
   outline: none;
 }
 
-.top-form__form {
-}
-
 /*================================================
     SERVICE
   ===============================================*/
+
 .service {
 }
 
@@ -297,43 +298,137 @@ a {
   color: #7b7b7b;
 }
 
-.service__column-left > div:before,
-.service__column-right > div:before {
+.service__item-title:before {
   content: "";
   position: absolute;
   display: block;
-  top: 5px;
+  left: 15px;
   width: 47px;
   height: 47px;
 }
 
-.service__column-left > div:nth-child(1):before {
+.service__column-left > div:nth-child(1) .service__item-title:before {
   background: url("../image/service-1.png") no-repeat center;
 }
 
-.service__column-left > div:nth-child(2):before {
+.service__column-left > div:nth-child(2) .service__item-title:before {
   width: 62px;
   height: 44px;
   background: url("../image/service-2.png") no-repeat center;
 }
 
-.service__column-left > div:nth-child(3):before {
+.service__column-left > div:nth-child(3) .service__item-title:before {
   background: url("../image/service-3.png") no-repeat center;
 }
 
-.service__column-right > div:nth-child(1):before {
+.service__column-right > div:nth-child(1) .service__item-title:before {
   height: 48px;
   background: url("../image/service-4.png") no-repeat center;
 }
 
-.service__column-right > div:nth-child(2):before {
+.service__column-right > div:nth-child(2) .service__item-title:before {
   width: 50px;
   height: 51px;
   background: url("../image/service-5.png") no-repeat center;
 }
 
-.service__column-right > div:nth-child(3):before {
+.service__column-right > div:nth-child(3) .service__item-title:before {
   width: 31px;
   height: 55px;
   background: url("../image/service-6.png") no-repeat center;
+}
+
+/*================================================
+    ABOUT
+  ===============================================*/
+
+.about {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 626px;
+
+  color: white;
+}
+
+.about__left-column {
+  flex: 0 0 50%;
+  width: 50%;
+  background: url("../image/about-1.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.about__right-column {
+  flex: 0 0 50%;
+  width: 50%;
+  background-color: #ffc155;
+}
+
+.about__right-column__inner {
+  margin-top: 150px;
+  margin-left: 80px;
+}
+
+.about__title {
+  margin-bottom: 20px;
+
+  font-family: GothamBlack;
+  font-size: 30px;
+  line-height: 22px;
+  letter-spacing: -0.22px;
+  text-transform: uppercase;
+}
+
+.about__text {
+  max-width: 590px;
+  margin-bottom: 30px;
+
+  font-family: "Open Sans";
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.about__btn {
+  width: 149px;
+  height: 50px;
+
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 50px;
+
+  border-radius: 2px;
+  border: 1px solid #e7ad48;
+  cursor: pointer;
+}
+
+/*================================================
+    PRICE
+  ===============================================*/
+
+.price {
+  background-color: #e7edf3;
+  text-align: center;
+}
+
+.price__title {
+  padding-top: 130px;
+  padding-bottom: 5px;
+  font-family: GothamBlack;
+  font-size: 30px;
+  line-height: 22px;
+  letter-spacing: -0.25px;
+  color: #394b50;
+  text-transform: uppercase;
+}
+
+.price__text {
+  margin-bottom: 30px;
+
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #75888d;
 }
