@@ -156,6 +156,10 @@
   .slider__inner {
     margin-top: 40px;
   }
+
+  .clients__item {
+    margin: 15px 15px;
+  }
 }
 
 @media (max-width: 520px) {
@@ -165,6 +169,7 @@
   .clients__item-inner {
     flex-flow: column nowrap;
     align-items: center;
+    margin: 0 5px !important;
   }
   .clients__item-img {
     width: 130px;
@@ -204,12 +209,12 @@
     display: flex;
     flex-flow: wrap row;
     align-content: space-between;
-    background-color: #ffbb42;
 
     height: 50px;
+    background-color: white;
   }
   .menu__inner ul li a {
-    color: white;
+    color: #ffbb42;
   }
   .menu-icon:before {
     content: "\e9bd";
